@@ -16,34 +16,27 @@ Implementation of Pseudorandom Number Generation Using Standard library
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+int main()
+{
     int count, min, max;
-
-    printf("Enter number of random numbers: ");
+    printf("Enter the number of random numbers to generate: ");
     scanf("%d", &count);
-    printf("Enter min value: ");
+    printf("Enter the minimum value: ");
     scanf("%d", &min);
-    printf("Enter max value: ");
+    printf("Enter the maximum value: ");
     scanf("%d", &max);
-
-    if (min > max) {
-        printf("Error: min cannot be greater than max.\n");
-        return 1;
-    }
-
-    srand((unsigned int)time(NULL)); // seed with current time
-
+    srand(time(NULL));
     printf("Pseudorandom numbers:\n");
-    for (int i = 0; i < count; i++) {
-        int random_number = rand() % (max - min + 1) + min;
+    for (int i = 0; i < count; i++)
+    {
+        int random_number = (rand() % (max - min + 1)) + min;
         printf("%d\n", random_number);
     }
-
     return 0;
 }
 ```
 # OUTPUT:
-<img width="664" height="376" alt="image" src="https://github.com/user-attachments/assets/94add36b-063a-47c2-b508-aad108aa58c6" />
+<img width="608" height="369" alt="image" src="https://github.com/user-attachments/assets/314f9c86-1343-4aa0-b64f-0fb9ef259fea" />
 
 # RESULT:
 Implementation of Pseudorandom Number Generation Using Standard library is completed successfully.
