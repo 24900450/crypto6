@@ -36,7 +36,7 @@ int main()
 }
 ```
 # OUTPUT:
-<img width="608" height="369" alt="image" src="https://github.com/user-attachments/assets/314f9c86-1343-4aa0-b64f-0fb9ef259fea" />
+<img width="666" height="399" alt="image" src="https://github.com/user-attachments/assets/6f0172c3-293c-4c38-a074-3c147fc95124" /><br>
 
 # RESULT:
 Implementation of Pseudorandom Number Generation Using Standard library is completed successfully.
